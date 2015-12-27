@@ -18,6 +18,8 @@
 		110D05311C3002690003C4E9 /* GHRepositoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D052F1C3002690003C4E9 /* GHRepositoryListViewController.m */; };
 		110D05321C3002690003C4E9 /* GHRepositoryListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110D05301C3002690003C4E9 /* GHRepositoryListViewController.xib */; };
 		110D05341C3002D70003C4E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110D05331C3002D70003C4E9 /* LaunchScreen.xib */; };
+		110D053A1C30223C0003C4E9 /* GHBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D05391C30223C0003C4E9 /* GHBaseTableView.m */; };
+		110D053D1C3022650003C4E9 /* GHBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D053C1C3022650003C4E9 /* GHBaseTableViewController.m */; };
 		11AECFF41C2F600500A8DCB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11AECFEE1C2F600500A8DCB5 /* Assets.xcassets */; };
 		11AECFF61C2F600500A8DCB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AECFF11C2F600500A8DCB5 /* main.m */; };
 		11AECFF91C2F60BF00A8DCB5 /* GHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AECFF81C2F60BF00A8DCB5 /* GHAppDelegate.m */; };
@@ -41,6 +43,12 @@
 		110D052F1C3002690003C4E9 /* GHRepositoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryListViewController.m; sourceTree = "<group>"; };
 		110D05301C3002690003C4E9 /* GHRepositoryListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHRepositoryListViewController.xib; sourceTree = "<group>"; };
 		110D05331C3002D70003C4E9 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		110D05361C3022000003C4E9 /* GHBaseTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHBaseTableViewDelegate.h; sourceTree = "<group>"; };
+		110D05371C3022140003C4E9 /* GHBaseTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHBaseTableViewDataSource.h; sourceTree = "<group>"; };
+		110D05381C30223C0003C4E9 /* GHBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHBaseTableView.h; sourceTree = "<group>"; };
+		110D05391C30223C0003C4E9 /* GHBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHBaseTableView.m; sourceTree = "<group>"; };
+		110D053B1C3022650003C4E9 /* GHBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHBaseTableViewController.h; sourceTree = "<group>"; };
+		110D053C1C3022650003C4E9 /* GHBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHBaseTableViewController.m; sourceTree = "<group>"; };
 		11AECFCE1C2F5EA600A8DCB5 /* GitHub-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11AECFEE1C2F600500A8DCB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11AECFF01C2F600500A8DCB5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,6 +121,19 @@
 				110D05211C3002290003C4E9 /* GHRootViewController.xib */,
 			);
 			path = GHRootViewController;
+			sourceTree = "<group>";
+		};
+		110D05351C3021D30003C4E9 /* GHTable */ = {
+			isa = PBXGroup;
+			children = (
+				110D05381C30223C0003C4E9 /* GHBaseTableView.h */,
+				110D05391C30223C0003C4E9 /* GHBaseTableView.m */,
+				110D05371C3022140003C4E9 /* GHBaseTableViewDataSource.h */,
+				110D05361C3022000003C4E9 /* GHBaseTableViewDelegate.h */,
+				110D053B1C3022650003C4E9 /* GHBaseTableViewController.h */,
+				110D053C1C3022650003C4E9 /* GHBaseTableViewController.m */,
+			);
+			path = GHTable;
 			sourceTree = "<group>";
 		};
 		11AECFC51C2F5EA600A8DCB5 = {
@@ -195,6 +216,7 @@
 		11AECFF21C2F600500A8DCB5 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				110D05351C3021D30003C4E9 /* GHTable */,
 				110D05151C2FF7970003C4E9 /* ProgressHUD */,
 			);
 			path = Utilities;
@@ -343,6 +365,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				110D05271C30023B0003C4E9 /* GHSearchViewController.m in Sources */,
+				110D053A1C30223C0003C4E9 /* GHBaseTableView.m in Sources */,
+				110D053D1C3022650003C4E9 /* GHBaseTableViewController.m in Sources */,
 				110D051A1C2FF7970003C4E9 /* ProgressHUD.m in Sources */,
 				110D05311C3002690003C4E9 /* GHRepositoryListViewController.m in Sources */,
 				11AECFF61C2F600500A8DCB5 /* main.m in Sources */,
