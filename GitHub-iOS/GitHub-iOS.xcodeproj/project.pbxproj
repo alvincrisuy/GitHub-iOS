@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		110D05191C2FF7970003C4E9 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 110D05161C2FF7970003C4E9 /* ProgressHUD.bundle */; };
 		110D051A1C2FF7970003C4E9 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D05181C2FF7970003C4E9 /* ProgressHUD.m */; };
+		110D05221C3002290003C4E9 /* GHRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D05201C3002290003C4E9 /* GHRootViewController.m */; };
+		110D05231C3002290003C4E9 /* GHRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110D05211C3002290003C4E9 /* GHRootViewController.xib */; };
+		110D05271C30023B0003C4E9 /* GHSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D05251C30023B0003C4E9 /* GHSearchViewController.m */; };
+		110D05281C30023B0003C4E9 /* GHSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110D05261C30023B0003C4E9 /* GHSearchViewController.xib */; };
+		110D052C1C30024E0003C4E9 /* GHRepositoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D052A1C30024E0003C4E9 /* GHRepositoryViewController.m */; };
+		110D052D1C30024E0003C4E9 /* GHRepositoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110D052B1C30024E0003C4E9 /* GHRepositoryViewController.xib */; };
+		110D05311C3002690003C4E9 /* GHRepositoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D052F1C3002690003C4E9 /* GHRepositoryListViewController.m */; };
+		110D05321C3002690003C4E9 /* GHRepositoryListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110D05301C3002690003C4E9 /* GHRepositoryListViewController.xib */; };
+		110D05341C3002D70003C4E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110D05331C3002D70003C4E9 /* LaunchScreen.xib */; };
 		11AECFF41C2F600500A8DCB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11AECFEE1C2F600500A8DCB5 /* Assets.xcassets */; };
 		11AECFF61C2F600500A8DCB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AECFF11C2F600500A8DCB5 /* main.m */; };
 		11AECFF91C2F60BF00A8DCB5 /* GHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AECFF81C2F60BF00A8DCB5 /* GHAppDelegate.m */; };
@@ -19,6 +28,19 @@
 		110D05161C2FF7970003C4E9 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		110D05171C2FF7970003C4E9 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		110D05181C2FF7970003C4E9 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		110D051F1C3002290003C4E9 /* GHRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRootViewController.h; sourceTree = "<group>"; };
+		110D05201C3002290003C4E9 /* GHRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRootViewController.m; sourceTree = "<group>"; };
+		110D05211C3002290003C4E9 /* GHRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHRootViewController.xib; sourceTree = "<group>"; };
+		110D05241C30023B0003C4E9 /* GHSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSearchViewController.h; sourceTree = "<group>"; };
+		110D05251C30023B0003C4E9 /* GHSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSearchViewController.m; sourceTree = "<group>"; };
+		110D05261C30023B0003C4E9 /* GHSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHSearchViewController.xib; sourceTree = "<group>"; };
+		110D05291C30024E0003C4E9 /* GHRepositoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepositoryViewController.h; sourceTree = "<group>"; };
+		110D052A1C30024E0003C4E9 /* GHRepositoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryViewController.m; sourceTree = "<group>"; };
+		110D052B1C30024E0003C4E9 /* GHRepositoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHRepositoryViewController.xib; sourceTree = "<group>"; };
+		110D052E1C3002690003C4E9 /* GHRepositoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepositoryListViewController.h; sourceTree = "<group>"; };
+		110D052F1C3002690003C4E9 /* GHRepositoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryListViewController.m; sourceTree = "<group>"; };
+		110D05301C3002690003C4E9 /* GHRepositoryListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHRepositoryListViewController.xib; sourceTree = "<group>"; };
+		110D05331C3002D70003C4E9 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		11AECFCE1C2F5EA600A8DCB5 /* GitHub-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11AECFEE1C2F600500A8DCB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11AECFF01C2F600500A8DCB5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +73,46 @@
 				110D05181C2FF7970003C4E9 /* ProgressHUD.m */,
 			);
 			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		110D051B1C3001DE0003C4E9 /* GHRepositoryListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				110D052E1C3002690003C4E9 /* GHRepositoryListViewController.h */,
+				110D052F1C3002690003C4E9 /* GHRepositoryListViewController.m */,
+				110D05301C3002690003C4E9 /* GHRepositoryListViewController.xib */,
+			);
+			path = GHRepositoryListViewController;
+			sourceTree = "<group>";
+		};
+		110D051C1C3001DE0003C4E9 /* GHRepositoryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				110D05291C30024E0003C4E9 /* GHRepositoryViewController.h */,
+				110D052A1C30024E0003C4E9 /* GHRepositoryViewController.m */,
+				110D052B1C30024E0003C4E9 /* GHRepositoryViewController.xib */,
+			);
+			path = GHRepositoryViewController;
+			sourceTree = "<group>";
+		};
+		110D051D1C3001DE0003C4E9 /* GHSearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				110D05241C30023B0003C4E9 /* GHSearchViewController.h */,
+				110D05251C30023B0003C4E9 /* GHSearchViewController.m */,
+				110D05261C30023B0003C4E9 /* GHSearchViewController.xib */,
+			);
+			path = GHSearchViewController;
+			sourceTree = "<group>";
+		};
+		110D051E1C3002040003C4E9 /* GHRootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				110D051F1C3002290003C4E9 /* GHRootViewController.h */,
+				110D05201C3002290003C4E9 /* GHRootViewController.m */,
+				110D05211C3002290003C4E9 /* GHRootViewController.xib */,
+			);
+			path = GHRootViewController;
 			sourceTree = "<group>";
 		};
 		11AECFC51C2F5EA600A8DCB5 = {
@@ -96,6 +158,11 @@
 			children = (
 				11AECFF71C2F60BF00A8DCB5 /* GHAppDelegate.h */,
 				11AECFF81C2F60BF00A8DCB5 /* GHAppDelegate.m */,
+				110D05331C3002D70003C4E9 /* LaunchScreen.xib */,
+				110D051B1C3001DE0003C4E9 /* GHRepositoryListViewController */,
+				110D051C1C3001DE0003C4E9 /* GHRepositoryViewController */,
+				110D051E1C3002040003C4E9 /* GHRootViewController */,
+				110D051D1C3001DE0003C4E9 /* GHSearchViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -210,8 +277,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110D05231C3002290003C4E9 /* GHRootViewController.xib in Resources */,
+				110D052D1C30024E0003C4E9 /* GHRepositoryViewController.xib in Resources */,
 				110D05191C2FF7970003C4E9 /* ProgressHUD.bundle in Resources */,
+				110D05341C3002D70003C4E9 /* LaunchScreen.xib in Resources */,
 				11AECFF41C2F600500A8DCB5 /* Assets.xcassets in Resources */,
+				110D05281C30023B0003C4E9 /* GHSearchViewController.xib in Resources */,
+				110D05321C3002690003C4E9 /* GHRepositoryListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +342,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110D05271C30023B0003C4E9 /* GHSearchViewController.m in Sources */,
 				110D051A1C2FF7970003C4E9 /* ProgressHUD.m in Sources */,
+				110D05311C3002690003C4E9 /* GHRepositoryListViewController.m in Sources */,
 				11AECFF61C2F600500A8DCB5 /* main.m in Sources */,
+				110D052C1C30024E0003C4E9 /* GHRepositoryViewController.m in Sources */,
 				11AECFF91C2F60BF00A8DCB5 /* GHAppDelegate.m in Sources */,
+				110D05221C3002290003C4E9 /* GHRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
