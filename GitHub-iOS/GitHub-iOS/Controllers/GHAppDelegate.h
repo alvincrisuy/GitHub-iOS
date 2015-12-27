@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  GHAppDelegate.h
 //  GitHub-iOS
 //
 //  Created by Alvin Cris Uy on 27/12/2015.
@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface GHAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
 
 @end
 
