@@ -7,16 +7,33 @@
 //
 
 #import "GHAppDelegate.h"
-
-@interface GHAppDelegate ()
-
-@end
+#import "GHRootViewController.h"
 
 @implementation GHAppDelegate
 
++ (GHAppDelegate *)sharedDelegate {
+    
+    static GHAppDelegate *_sharedInstance = nil;
+    static dispatch_once_t oncePredicate;
+    dispatch_once(&oncePredicate, ^{
+        _sharedInstance = [[self alloc] init];
+    });
+    
+    return _sharedInstance;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    if (!self.rootViewController) {
+        GHRootViewController *vc = [[GHRootViewController alloc] init];
+        self.rootViewController = vc;
+        [self.window addSubview:self.rootViewController.view];
+        self.window.rootViewController = self.rootViewController;
+    }
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

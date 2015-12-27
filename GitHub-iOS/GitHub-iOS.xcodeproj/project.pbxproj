@@ -442,6 +442,7 @@
 			baseConfigurationReference = 83E4D4612E6EC63FB93B7552 /* Pods-GitHub-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GitHub-iOS/Supporting Files/GitHub-iOS-Prefix.pch";
@@ -457,6 +458,7 @@
 			baseConfigurationReference = CEE639A9EF15087EC9F25D00 /* Pods-GitHub-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GitHub-iOS/Supporting Files/GitHub-iOS-Prefix.pch";

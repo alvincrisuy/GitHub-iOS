@@ -8,6 +8,42 @@
 
 #import <UIKit/UIKit.h>
 
+@class GHSearchViewController;
+@class GHRepositoryViewController;
+@class GHRepositoryListViewController;
+
 @interface GHRootViewController : UIViewController
+
+// Rootview UIViews
+@property (nonatomic, retain) IBOutlet UIView *navigationView;
+@property (nonatomic, retain) IBOutlet UIView *contentView;
+
+// Navigation Controller - Navigate Pages
+@property (nonatomic, retain) UINavigationController *contentNavigationController;
+
+// Back Button
+@property (nonatomic, retain) IBOutlet UIView *backButtonView;
+@property (nonatomic, retain) IBOutlet UIButton *backButton;
+
+// Transitions
+- (void)transitionSearch;
+- (void)transitionRepositoryList;
+- (void)transitionRepository;
+
+- (void)transition:(UIViewController *)viewController animated:(BOOL)animated;
+- (void)popTransitionAnimated:(BOOL)animated;
+- (void)pushTransition:(UIViewController *)viewController animated:(BOOL)animated;
+
+// Transfer
+- (void)transferSearchViewController:(id)sender;
+- (void)transferRepositoryListViewController:(id)sender;
+- (void)transferRepositoryViewController:(id)sender;
+
+- (GHSearchViewController *)searchViewController;
+- (GHRepositoryListViewController *)repositoryListViewController;
+- (GHRepositoryViewController *)repositoryViewController;
+
+// Singleton
++ (GHRootViewController *)sharedController;
 
 @end

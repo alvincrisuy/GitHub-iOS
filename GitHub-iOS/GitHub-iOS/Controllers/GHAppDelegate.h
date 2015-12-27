@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GHAppDelegate : UIResponder <UIApplicationDelegate>
+@class GHRootViewController;
 
-@property (strong, nonatomic) UIWindow *window;
+@interface GHAppDelegate : NSObject <UIApplicationDelegate>
+
+@property (nonatomic, retain) IBOutlet UIWindow     *window;
+@property (nonatomic, retain) GHRootViewController  *rootViewController;
 
 @end
 
