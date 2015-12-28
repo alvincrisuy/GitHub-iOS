@@ -12,10 +12,11 @@
 #import "ProgressHUD.h"
 #import "NSArray+GHRepositoryModel.h"
 
+static GHSearchManager *_sharedManager = nil;
+
 @implementation GHSearchManager
 
 + (instancetype)sharedManager {
-    static GHSearchManager *_sharedManager = nil;
     
     @synchronized(self) {
         if (_sharedManager == nil) {

@@ -7,7 +7,19 @@
 //
 
 #import "GHContributorModel.h"
+#import "NSDictionary+NullCheck.h"
 
 @implementation GHContributorModel
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary {
+    if (self = [super init]) {
+        SetIntValueIfNotNullForKey(self.contributorId, dictionary, @"id")
+        SetValueIfNotNullForKey(self.contributorLogin, dictionary, @"login")
+        SetValueIfNotNullForKey(self.contributorAvatarURL, dictionary, @"avatar_url")
+        SetIntValueIfNotNullForKey(self.contributorContributionsCount, dictionary, @"contributions")
+    }
+    
+    return self;
+}
 
 @end

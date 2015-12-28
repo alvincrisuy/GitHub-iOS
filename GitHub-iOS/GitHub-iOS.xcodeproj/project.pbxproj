@@ -23,8 +23,6 @@
 		110D05411C3025060003C4E9 /* ReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D05401C3025060003C4E9 /* ReachabilityManager.m */; };
 		110D054A1C3099A90003C4E9 /* GHRepositoryListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D05481C3099A80003C4E9 /* GHRepositoryListTableViewCell.m */; };
 		110D054B1C3099A90003C4E9 /* GHRepositoryListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110D05491C3099A90003C4E9 /* GHRepositoryListTableViewCell.xib */; };
-		110D054F1C3099C70003C4E9 /* GHRepositoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D054D1C3099C70003C4E9 /* GHRepositoryTableViewCell.m */; };
-		110D05501C3099C70003C4E9 /* GHRepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110D054E1C3099C70003C4E9 /* GHRepositoryTableViewCell.xib */; };
 		110D05541C3099DA0003C4E9 /* GHSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D05521C3099DA0003C4E9 /* GHSearchTableViewCell.m */; };
 		110D05551C3099DA0003C4E9 /* GHSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110D05531C3099DA0003C4E9 /* GHSearchTableViewCell.xib */; };
 		110D055B1C30E7B40003C4E9 /* GHContributorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D055A1C30E7B40003C4E9 /* GHContributorModel.m */; };
@@ -34,6 +32,21 @@
 		110D05691C30F1140003C4E9 /* GHSearchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D05681C30F1140003C4E9 /* GHSearchManager.m */; };
 		110D056C1C30F7610003C4E9 /* NSArray+GHRepositoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D056B1C30F7610003C4E9 /* NSArray+GHRepositoryModel.m */; };
 		110D05771C3128EE0003C4E9 /* GHCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D05761C3128EE0003C4E9 /* GHCommon.m */; };
+		110D05821C31347A0003C4E9 /* GHRepositoryIssuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D05801C31347A0003C4E9 /* GHRepositoryIssuesViewController.m */; };
+		110D05831C31347A0003C4E9 /* GHRepositoryIssuesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110D05811C31347A0003C4E9 /* GHRepositoryIssuesViewController.xib */; };
+		110D05871C3134920003C4E9 /* GHRepositoryContributorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D05851C3134920003C4E9 /* GHRepositoryContributorsViewController.m */; };
+		110D05881C3134920003C4E9 /* GHRepositoryContributorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110D05861C3134920003C4E9 /* GHRepositoryContributorsViewController.xib */; };
+		110D058E1C3135BC0003C4E9 /* GHTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D058D1C3135BC0003C4E9 /* GHTabView.m */; };
+		110D05901C3135C80003C4E9 /* GHTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110D058F1C3135C80003C4E9 /* GHTabView.xib */; };
+		110D05941C3135E50003C4E9 /* GHTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D05921C3135E50003C4E9 /* GHTabViewController.m */; };
+		110D05951C3135E50003C4E9 /* GHTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110D05931C3135E50003C4E9 /* GHTabViewController.xib */; };
+		110D05991C3139350003C4E9 /* GHRepositoryIssuesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D05971C3139350003C4E9 /* GHRepositoryIssuesTableViewCell.m */; };
+		110D059A1C3139350003C4E9 /* GHRepositoryIssuesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110D05981C3139350003C4E9 /* GHRepositoryIssuesTableViewCell.xib */; };
+		110D059E1C3139490003C4E9 /* GHRepositoryContributorsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D059C1C3139490003C4E9 /* GHRepositoryContributorsTableViewCell.m */; };
+		110D059F1C3139490003C4E9 /* GHRepositoryContributorsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110D059D1C3139490003C4E9 /* GHRepositoryContributorsTableViewCell.xib */; };
+		110D05A21C313E220003C4E9 /* NSArray+GHIssueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D05A11C313E220003C4E9 /* NSArray+GHIssueModel.m */; };
+		110D05A51C313E340003C4E9 /* NSArray+GHContributorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D05A41C313E340003C4E9 /* NSArray+GHContributorModel.m */; };
+		110D05A91C313F4E0003C4E9 /* GHRepositoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D05A81C313F4E0003C4E9 /* GHRepositoryManager.m */; };
 		11AECFF41C2F600500A8DCB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11AECFEE1C2F600500A8DCB5 /* Assets.xcassets */; };
 		11AECFF61C2F600500A8DCB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AECFF11C2F600500A8DCB5 /* main.m */; };
 		11AECFF91C2F60BF00A8DCB5 /* GHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AECFF81C2F60BF00A8DCB5 /* GHAppDelegate.m */; };
@@ -68,9 +81,6 @@
 		110D05471C3099A80003C4E9 /* GHRepositoryListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepositoryListTableViewCell.h; sourceTree = "<group>"; };
 		110D05481C3099A80003C4E9 /* GHRepositoryListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryListTableViewCell.m; sourceTree = "<group>"; };
 		110D05491C3099A90003C4E9 /* GHRepositoryListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHRepositoryListTableViewCell.xib; sourceTree = "<group>"; };
-		110D054C1C3099C60003C4E9 /* GHRepositoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepositoryTableViewCell.h; sourceTree = "<group>"; };
-		110D054D1C3099C70003C4E9 /* GHRepositoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryTableViewCell.m; sourceTree = "<group>"; };
-		110D054E1C3099C70003C4E9 /* GHRepositoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHRepositoryTableViewCell.xib; sourceTree = "<group>"; };
 		110D05511C3099DA0003C4E9 /* GHSearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSearchTableViewCell.h; sourceTree = "<group>"; };
 		110D05521C3099DA0003C4E9 /* GHSearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSearchTableViewCell.m; sourceTree = "<group>"; };
 		110D05531C3099DA0003C4E9 /* GHSearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHSearchTableViewCell.xib; sourceTree = "<group>"; };
@@ -88,6 +98,32 @@
 		110D056B1C30F7610003C4E9 /* NSArray+GHRepositoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+GHRepositoryModel.m"; sourceTree = "<group>"; };
 		110D05751C3128EE0003C4E9 /* GHCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHCommon.h; sourceTree = "<group>"; };
 		110D05761C3128EE0003C4E9 /* GHCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHCommon.m; sourceTree = "<group>"; };
+		110D057F1C31347A0003C4E9 /* GHRepositoryIssuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepositoryIssuesViewController.h; sourceTree = "<group>"; };
+		110D05801C31347A0003C4E9 /* GHRepositoryIssuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryIssuesViewController.m; sourceTree = "<group>"; };
+		110D05811C31347A0003C4E9 /* GHRepositoryIssuesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHRepositoryIssuesViewController.xib; sourceTree = "<group>"; };
+		110D05841C3134920003C4E9 /* GHRepositoryContributorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepositoryContributorsViewController.h; sourceTree = "<group>"; };
+		110D05851C3134920003C4E9 /* GHRepositoryContributorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryContributorsViewController.m; sourceTree = "<group>"; };
+		110D05861C3134920003C4E9 /* GHRepositoryContributorsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHRepositoryContributorsViewController.xib; sourceTree = "<group>"; };
+		110D058A1C31356C0003C4E9 /* GHTabViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHTabViewDelegate.h; sourceTree = "<group>"; };
+		110D058B1C31358B0003C4E9 /* GHTabViewInternalDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHTabViewInternalDelegate.h; sourceTree = "<group>"; };
+		110D058C1C3135BC0003C4E9 /* GHTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHTabView.h; sourceTree = "<group>"; };
+		110D058D1C3135BC0003C4E9 /* GHTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHTabView.m; sourceTree = "<group>"; };
+		110D058F1C3135C80003C4E9 /* GHTabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHTabView.xib; sourceTree = "<group>"; };
+		110D05911C3135E50003C4E9 /* GHTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHTabViewController.h; sourceTree = "<group>"; };
+		110D05921C3135E50003C4E9 /* GHTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHTabViewController.m; sourceTree = "<group>"; };
+		110D05931C3135E50003C4E9 /* GHTabViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHTabViewController.xib; sourceTree = "<group>"; };
+		110D05961C3139350003C4E9 /* GHRepositoryIssuesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepositoryIssuesTableViewCell.h; sourceTree = "<group>"; };
+		110D05971C3139350003C4E9 /* GHRepositoryIssuesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryIssuesTableViewCell.m; sourceTree = "<group>"; };
+		110D05981C3139350003C4E9 /* GHRepositoryIssuesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHRepositoryIssuesTableViewCell.xib; sourceTree = "<group>"; };
+		110D059B1C3139490003C4E9 /* GHRepositoryContributorsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepositoryContributorsTableViewCell.h; sourceTree = "<group>"; };
+		110D059C1C3139490003C4E9 /* GHRepositoryContributorsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryContributorsTableViewCell.m; sourceTree = "<group>"; };
+		110D059D1C3139490003C4E9 /* GHRepositoryContributorsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHRepositoryContributorsTableViewCell.xib; sourceTree = "<group>"; };
+		110D05A01C313E220003C4E9 /* NSArray+GHIssueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+GHIssueModel.h"; sourceTree = "<group>"; };
+		110D05A11C313E220003C4E9 /* NSArray+GHIssueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+GHIssueModel.m"; sourceTree = "<group>"; };
+		110D05A31C313E340003C4E9 /* NSArray+GHContributorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+GHContributorModel.h"; sourceTree = "<group>"; };
+		110D05A41C313E340003C4E9 /* NSArray+GHContributorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+GHContributorModel.m"; sourceTree = "<group>"; };
+		110D05A71C313F4E0003C4E9 /* GHRepositoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepositoryManager.h; sourceTree = "<group>"; };
+		110D05A81C313F4E0003C4E9 /* GHRepositoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryManager.m; sourceTree = "<group>"; };
 		11AECFCE1C2F5EA600A8DCB5 /* GitHub-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11AECFEE1C2F600500A8DCB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11AECFF01C2F600500A8DCB5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -138,12 +174,12 @@
 		110D051C1C3001DE0003C4E9 /* GHRepositoryViewController */ = {
 			isa = PBXGroup;
 			children = (
+				110D05781C3133DF0003C4E9 /* GHRepositoryContributorsViewController */,
+				110D05791C3133DF0003C4E9 /* GHRepositoryIssuesViewController */,
+				110D05A61C313F330003C4E9 /* GHRepositoryManager */,
 				110D05291C30024E0003C4E9 /* GHRepositoryViewController.h */,
 				110D052A1C30024E0003C4E9 /* GHRepositoryViewController.m */,
 				110D052B1C30024E0003C4E9 /* GHRepositoryViewController.xib */,
-				110D054C1C3099C60003C4E9 /* GHRepositoryTableViewCell.h */,
-				110D054D1C3099C70003C4E9 /* GHRepositoryTableViewCell.m */,
-				110D054E1C3099C70003C4E9 /* GHRepositoryTableViewCell.xib */,
 			);
 			path = GHRepositoryViewController;
 			sourceTree = "<group>";
@@ -199,6 +235,8 @@
 			children = (
 				110D05591C30E7B40003C4E9 /* GHContributorModel.h */,
 				110D055A1C30E7B40003C4E9 /* GHContributorModel.m */,
+				110D05A31C313E340003C4E9 /* NSArray+GHContributorModel.h */,
+				110D05A41C313E340003C4E9 /* NSArray+GHContributorModel.m */,
 			);
 			path = GHContributor;
 			sourceTree = "<group>";
@@ -208,6 +246,8 @@
 			children = (
 				110D055C1C30E7C30003C4E9 /* GHIssueModel.h */,
 				110D055D1C30E7C30003C4E9 /* GHIssueModel.m */,
+				110D05A01C313E220003C4E9 /* NSArray+GHIssueModel.h */,
+				110D05A11C313E220003C4E9 /* NSArray+GHIssueModel.m */,
 			);
 			path = GHIssue;
 			sourceTree = "<group>";
@@ -239,6 +279,56 @@
 				110D05681C30F1140003C4E9 /* GHSearchManager.m */,
 			);
 			path = GHSearchManager;
+			sourceTree = "<group>";
+		};
+		110D05781C3133DF0003C4E9 /* GHRepositoryContributorsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				110D05841C3134920003C4E9 /* GHRepositoryContributorsViewController.h */,
+				110D05851C3134920003C4E9 /* GHRepositoryContributorsViewController.m */,
+				110D05861C3134920003C4E9 /* GHRepositoryContributorsViewController.xib */,
+				110D059B1C3139490003C4E9 /* GHRepositoryContributorsTableViewCell.h */,
+				110D059C1C3139490003C4E9 /* GHRepositoryContributorsTableViewCell.m */,
+				110D059D1C3139490003C4E9 /* GHRepositoryContributorsTableViewCell.xib */,
+			);
+			path = GHRepositoryContributorsViewController;
+			sourceTree = "<group>";
+		};
+		110D05791C3133DF0003C4E9 /* GHRepositoryIssuesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				110D057F1C31347A0003C4E9 /* GHRepositoryIssuesViewController.h */,
+				110D05801C31347A0003C4E9 /* GHRepositoryIssuesViewController.m */,
+				110D05811C31347A0003C4E9 /* GHRepositoryIssuesViewController.xib */,
+				110D05961C3139350003C4E9 /* GHRepositoryIssuesTableViewCell.h */,
+				110D05971C3139350003C4E9 /* GHRepositoryIssuesTableViewCell.m */,
+				110D05981C3139350003C4E9 /* GHRepositoryIssuesTableViewCell.xib */,
+			);
+			path = GHRepositoryIssuesViewController;
+			sourceTree = "<group>";
+		};
+		110D05891C31354A0003C4E9 /* GHTab */ = {
+			isa = PBXGroup;
+			children = (
+				110D058A1C31356C0003C4E9 /* GHTabViewDelegate.h */,
+				110D058B1C31358B0003C4E9 /* GHTabViewInternalDelegate.h */,
+				110D058C1C3135BC0003C4E9 /* GHTabView.h */,
+				110D058D1C3135BC0003C4E9 /* GHTabView.m */,
+				110D058F1C3135C80003C4E9 /* GHTabView.xib */,
+				110D05911C3135E50003C4E9 /* GHTabViewController.h */,
+				110D05921C3135E50003C4E9 /* GHTabViewController.m */,
+				110D05931C3135E50003C4E9 /* GHTabViewController.xib */,
+			);
+			path = GHTab;
+			sourceTree = "<group>";
+		};
+		110D05A61C313F330003C4E9 /* GHRepositoryManager */ = {
+			isa = PBXGroup;
+			children = (
+				110D05A71C313F4E0003C4E9 /* GHRepositoryManager.h */,
+				110D05A81C313F4E0003C4E9 /* GHRepositoryManager.m */,
+			);
+			path = GHRepositoryManager;
 			sourceTree = "<group>";
 		};
 		11AECFC51C2F5EA600A8DCB5 = {
@@ -326,6 +416,7 @@
 		11AECFF21C2F600500A8DCB5 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				110D05891C31354A0003C4E9 /* GHTab */,
 				110D05351C3021D30003C4E9 /* GHTable */,
 				110D05621C30E9810003C4E9 /* NSDictionary */,
 				110D05151C2FF7970003C4E9 /* ProgressHUD */,
@@ -412,16 +503,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110D05951C3135E50003C4E9 /* GHTabViewController.xib in Resources */,
 				110D05231C3002290003C4E9 /* GHRootViewController.xib in Resources */,
 				110D052D1C30024E0003C4E9 /* GHRepositoryViewController.xib in Resources */,
 				110D05551C3099DA0003C4E9 /* GHSearchTableViewCell.xib in Resources */,
+				110D05881C3134920003C4E9 /* GHRepositoryContributorsViewController.xib in Resources */,
 				110D05191C2FF7970003C4E9 /* ProgressHUD.bundle in Resources */,
-				110D05501C3099C70003C4E9 /* GHRepositoryTableViewCell.xib in Resources */,
+				110D059A1C3139350003C4E9 /* GHRepositoryIssuesTableViewCell.xib in Resources */,
 				110D05341C3002D70003C4E9 /* LaunchScreen.xib in Resources */,
 				110D054B1C3099A90003C4E9 /* GHRepositoryListTableViewCell.xib in Resources */,
+				110D059F1C3139490003C4E9 /* GHRepositoryContributorsTableViewCell.xib in Resources */,
+				110D05831C31347A0003C4E9 /* GHRepositoryIssuesViewController.xib in Resources */,
 				11AECFF41C2F600500A8DCB5 /* Assets.xcassets in Resources */,
 				110D05281C30023B0003C4E9 /* GHSearchViewController.xib in Resources */,
 				110D05321C3002690003C4E9 /* GHRepositoryListViewController.xib in Resources */,
+				110D05901C3135C80003C4E9 /* GHTabView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,25 +577,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				110D055B1C30E7B40003C4E9 /* GHContributorModel.m in Sources */,
+				110D05A21C313E220003C4E9 /* NSArray+GHIssueModel.m in Sources */,
+				110D058E1C3135BC0003C4E9 /* GHTabView.m in Sources */,
 				110D056C1C30F7610003C4E9 /* NSArray+GHRepositoryModel.m in Sources */,
-				110D054F1C3099C70003C4E9 /* GHRepositoryTableViewCell.m in Sources */,
 				110D05271C30023B0003C4E9 /* GHSearchViewController.m in Sources */,
 				110D05541C3099DA0003C4E9 /* GHSearchTableViewCell.m in Sources */,
 				110D053A1C30223C0003C4E9 /* GHBaseTableView.m in Sources */,
 				110D053D1C3022650003C4E9 /* GHBaseTableViewController.m in Sources */,
+				110D05871C3134920003C4E9 /* GHRepositoryContributorsViewController.m in Sources */,
 				110D05651C30E9BF0003C4E9 /* NSDictionary+NullCheck.m in Sources */,
 				110D051A1C2FF7970003C4E9 /* ProgressHUD.m in Sources */,
 				110D055E1C30E7C30003C4E9 /* GHIssueModel.m in Sources */,
 				110D05311C3002690003C4E9 /* GHRepositoryListViewController.m in Sources */,
 				11AECFF61C2F600500A8DCB5 /* main.m in Sources */,
 				110D05411C3025060003C4E9 /* ReachabilityManager.m in Sources */,
+				110D05991C3139350003C4E9 /* GHRepositoryIssuesTableViewCell.m in Sources */,
 				110D05771C3128EE0003C4E9 /* GHCommon.m in Sources */,
+				110D05821C31347A0003C4E9 /* GHRepositoryIssuesViewController.m in Sources */,
+				110D05A91C313F4E0003C4E9 /* GHRepositoryManager.m in Sources */,
 				110D054A1C3099A90003C4E9 /* GHRepositoryListTableViewCell.m in Sources */,
+				110D05941C3135E50003C4E9 /* GHTabViewController.m in Sources */,
 				110D052C1C30024E0003C4E9 /* GHRepositoryViewController.m in Sources */,
 				110D05691C30F1140003C4E9 /* GHSearchManager.m in Sources */,
 				11AECFF91C2F60BF00A8DCB5 /* GHAppDelegate.m in Sources */,
 				110D05611C30E7D40003C4E9 /* GHRepositoryModel.m in Sources */,
+				110D05A51C313E340003C4E9 /* NSArray+GHContributorModel.m in Sources */,
 				110D05221C3002290003C4E9 /* GHRootViewController.m in Sources */,
+				110D059E1C3139490003C4E9 /* GHRepositoryContributorsTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

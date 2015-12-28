@@ -21,6 +21,7 @@
         SetValueIfNotNullForKey(self.repositoryLanguage, dictionary, @"language")
         SetIntValueIfNotNullForKey(self.repositoryStarGazersCount, dictionary, @"stargazers_count")
         SetIntValueIfNotNullForKey(self.repositoryForksCount, dictionary, @"forks_count")
+        SetValueIfNotNullForKey(self.repositoryURL, dictionary, @"url")
         
         SetValueIfNotNullForKey(self.repositoryContributorsURL, dictionary, @"contributors_url")
         SetValueIfNotNullForKey(self.repositoryIssuesURL, dictionary, @"issues_url")

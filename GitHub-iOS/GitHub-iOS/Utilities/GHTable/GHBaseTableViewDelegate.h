@@ -11,7 +11,7 @@
 @protocol GHBaseTableViewDelegate <NSObject>
 
 @required
-- (BOOL)noSearchResult:(GHBaseTableView *)tableView;
+//- (BOOL)noSearchResult:(GHBaseTableView *)tableView;
 @optional
 
 // Display customization

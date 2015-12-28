@@ -8,6 +8,7 @@
 
 #import "GHRepositoryListViewController.h"
 
+#import "GHCommon.h"
 #import "GHBaseTableView.h"
 #import "GHRepositoryListTableViewCell.h"
 #import "GHRepositoryModel.h"
@@ -59,12 +60,17 @@
     [cell setCell:model];
     
     [cell.button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
+    cell.button.tag = index;
     
     return cell;
 }
 
 - (void)buttonAction:(UIButton*)btn {
-    [[GHRootViewController sharedController] transferRepositoryViewController:self];
+    GHRepositoryModel *model = [self.repositories objectAtIndex:btn.tag];
+    
+    [GHCommon sharedInstance].repositoryModel = model;
+    
+    [[GHRootViewController sharedController] transferRepositoryViewController:self model:model];
 }
 
 @end

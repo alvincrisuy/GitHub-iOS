@@ -1,13 +1,13 @@
 //
-//  GHRepositoryTableViewCell.h
+//  GHTabViewDelegate.h
 //  GitHub-iOS
 //
 //  Created by Alvin Cris Uy on 28/12/2015.
 //  Copyright © 2015 Alvin Cris Uy. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@protocol GHTabViewDelegate <NSObject>
 
-@interface GHRepositoryTableViewCell : UITableViewCell
+- (NSString*)titleForTabSectionInRootTabViewController;
 
 @end

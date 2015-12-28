@@ -17,6 +17,7 @@
 @property (nonatomic, retain) NSString *repositoryLanguage;
 @property (nonatomic, assign) NSInteger repositoryStarGazersCount;
 @property (nonatomic, assign) NSInteger repositoryForksCount;
+@property (nonatomic, retain) NSString *repositoryURL;
 
 @property (nonatomic, retain) NSString *repositoryContributorsURL;
 @property (nonatomic, retain) NSString *repositoryIssuesURL;

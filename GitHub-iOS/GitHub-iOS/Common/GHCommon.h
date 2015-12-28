@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+@class GHRepositoryModel;
+
 @interface GHCommon : NSObject
+
+@property (nonatomic, retain) NSArray *asciiBack;
+@property (nonatomic, retain) NSArray *asciiStar;
+@property (nonatomic, retain) NSArray *asciiFork;
+
+@property (nonatomic, retain) GHRepositoryModel *repositoryModel;
+
++ (GHCommon *)sharedInstance;
 
 @end

@@ -12,6 +12,8 @@
 @class GHRepositoryViewController;
 @class GHRepositoryListViewController;
 
+@class GHRepositoryModel;
+
 @interface GHRootViewController : UIViewController
 
 // Rootview UIViews
@@ -37,7 +39,7 @@
 // Transfer
 - (void)transferSearchViewController:(id)sender;
 - (void)transferRepositoryListViewController:(id)sender repositories:(NSArray *)repositories;
-- (void)transferRepositoryViewController:(id)sender;
+- (void)transferRepositoryViewController:(id)sender model:(GHRepositoryModel *)model;
 
 - (GHSearchViewController *)searchViewController;
 - (GHRepositoryListViewController *)repositoryListViewController;

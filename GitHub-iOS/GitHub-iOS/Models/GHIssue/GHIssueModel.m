@@ -7,7 +7,20 @@
 //
 
 #import "GHIssueModel.h"
+#import "NSDictionary+NullCheck.h"
 
 @implementation GHIssueModel
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary {
+    if (self = [super init]) {
+        SetIntValueIfNotNullForKey(self.issueId, dictionary, @"id")
+        SetValueIfNotNullForKey(self.issueTitle, dictionary, @"title")
+        SetValueIfNotNullForKey(self.issueBody, dictionary, @"body")
+        SetIntValueIfNotNullForKey(self.issueCommentCount, dictionary, @"comments")
+        SetIntValueIfNotNullForKey(self.issueNumber, dictionary, @"number")
+    }
+    
+    return self;
+}
 
 @end
