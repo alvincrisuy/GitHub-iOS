@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GHRepositoryListViewController">
             <connections>
+                <outlet property="tableView" destination="Gds-8Y-QKw" id="NsK-pl-tBX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,8 +15,27 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gds-8Y-QKw" customClass="GHBaseTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="baseTableDataSource" destination="-1" id="OGZ-71-LaH"/>
+                        <outlet property="baseTableDelegate" destination="-1" id="1eQ-mO-svS"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Gds-8Y-QKw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Lth-tA-lNr"/>
+                <constraint firstItem="Gds-8Y-QKw" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="chR-00-pLd"/>
+                <constraint firstAttribute="bottom" secondItem="Gds-8Y-QKw" secondAttribute="bottom" id="n3G-ng-gjH"/>
+                <constraint firstItem="Gds-8Y-QKw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qJ5-pJ-Ub1"/>
+                <constraint firstItem="Gds-8Y-QKw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rld-sW-ugm"/>
+                <constraint firstAttribute="trailing" secondItem="Gds-8Y-QKw" secondAttribute="trailing" id="sYf-4P-qRD"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
         </view>
     </objects>

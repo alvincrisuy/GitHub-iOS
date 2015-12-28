@@ -8,6 +8,11 @@
 
 #import "GHRepositoryListViewController.h"
 
+#import "GHBaseTableView.h"
+#import "GHRepositoryListTableViewCell.h"
+#import "GHRepositoryModel.h"
+#import "GHRootViewController.h"
+
 @interface GHRepositoryListViewController ()
 
 @end
@@ -24,14 +29,42 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - GHBaseTableView
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)numberOfSectionsInTableView:(GHBaseTableView *)tableView {
+    return 1;
 }
-*/
+
+- (NSInteger)tableView:(GHBaseTableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.repositories.count;
+}
+
+- (CGFloat)tableView:(GHBaseTableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return [GHRepositoryListTableViewCell cellHeightWithStyle:GHRepositoryListCellStyleRow0];
+}
+
+- (UITableViewCell *)tableView:(GHBaseTableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSString* CELL_ID = @"RepositoryList";
+    
+    GHRepositoryListTableViewCell *cell = (GHRepositoryListTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CELL_ID];
+    
+    NSInteger index = indexPath.row;
+    
+    if (cell == nil) {
+        cell = [GHRepositoryListTableViewCell cellFromNib:GHRepositoryListCellStyleRow0];
+    }
+    
+    GHRepositoryModel *model = [self.repositories objectAtIndex:index];
+    [cell setCell:model];
+    
+    [cell.button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    return cell;
+}
+
+- (void)buttonAction:(UIButton*)btn {
+    [[GHRootViewController sharedController] transferRepositoryViewController:self];
+}
 
 @end

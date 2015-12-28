@@ -17,6 +17,44 @@
     
 }
 
+// Display customization
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    GHBaseTableView* baseTableView = (GHBaseTableView*)tableView;
+    
+    if(self.baseTableDelegate && [self.baseTableDelegate respondsToSelector:@selector(tableView:willDisplayCell:forRowAtIndexPath:)]){
+        [self.baseTableDelegate tableView:baseTableView willDisplayCell:cell forRowAtIndexPath:indexPath];
+    }
+    
+}
+
+// Variable height support
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    GHBaseTableView* baseTableView = (GHBaseTableView *)tableView;
+    
+    NSInteger section = [indexPath section];
+    NSInteger numberOfRows = 0;
+    
+    if(self.baseTableDataSource && [self.baseTableDataSource respondsToSelector:@selector(tableView:numberOfRowsInSection:)]) {
+        numberOfRows = [self.baseTableDataSource tableView:self numberOfRowsInSection:section];
+    }
+    
+    if(numberOfRows == 0){
+        return 0.0f;
+    }
+    
+    CGFloat heightForRow = 0.0f;
+    
+    if (self.baseTableDelegate && [self.baseTableDelegate respondsToSelector:@selector(tableView:heightForRowAtIndexPath:)]){
+        heightForRow = [self.baseTableDelegate tableView:baseTableView heightForRowAtIndexPath:indexPath];
+    }
+    
+    return heightForRow;
+    
+}
 
 // Called before the user changes the selection. Return a new indexPath, or nil, to change the proposed selection.
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -58,11 +96,11 @@
         numberOfRows = [self.baseTableDataSource tableView:baseTableView numberOfRowsInSection:section];
     }
     
-    if(numberOfRows == 0) {
-        if ([self.baseTableDelegate noSearchResult:baseTableView]) {
-            numberOfRows = 1;
-        }
-    }
+//    if(numberOfRows == 0) {
+//        if ([self.baseTableDelegate noSearchResult:baseTableView]) {
+//            numberOfRows = 1;
+//        }
+//    }
     
     return numberOfRows;
     

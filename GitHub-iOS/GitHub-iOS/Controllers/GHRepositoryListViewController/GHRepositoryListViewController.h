@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GHRepositoryListViewController : UIViewController
+#import "GHBaseTableViewController.h"
+
+@interface GHRepositoryListViewController : GHBaseTableViewController
+
+@property (nonatomic, retain) NSArray *repositories;
 
 @end

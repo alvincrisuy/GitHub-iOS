@@ -248,15 +248,17 @@ static GHRootViewController* _sharedController = nil;
 #pragma mark - Transfer
 
 - (void)transferSearchViewController:(id)sender {
-    [self pushTransition:[self searchViewController] animated:YES];
+    [self pushTransition:self.searchViewController animated:YES];
 }
 
-- (void)transferRepositoryListViewController:(id)sender {
-    [self pushTransition:[self repositoryListViewController] animated:YES];
+- (void)transferRepositoryListViewController:(id)sender repositories:(NSArray *)repositories {
+    [self pushTransition:self.repositoryListViewController animated:YES];
+    
+    self.repositoryListViewController.repositories = repositories;
 }
 
 - (void)transferRepositoryViewController:(id)sender {
-    [self pushTransition:[self repositoryViewController] animated:YES];
+    [self pushTransition:self.repositoryViewController animated:YES];
 }
 
 - (GHSearchViewController *)searchViewController {

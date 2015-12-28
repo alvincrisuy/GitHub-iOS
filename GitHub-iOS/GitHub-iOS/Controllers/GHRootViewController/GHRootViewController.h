@@ -36,7 +36,7 @@
 
 // Transfer
 - (void)transferSearchViewController:(id)sender;
-- (void)transferRepositoryListViewController:(id)sender;
+- (void)transferRepositoryListViewController:(id)sender repositories:(NSArray *)repositories;
 - (void)transferRepositoryViewController:(id)sender;
 
 - (GHSearchViewController *)searchViewController;

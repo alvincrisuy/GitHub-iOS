@@ -27,10 +27,11 @@ static ReachabilityManager* _sharedManager = nil;
 
 + (ReachabilityManager *)sharedManager {
     
-    static dispatch_once_t oncePredicate;
-    dispatch_once(&oncePredicate, ^{
-        _sharedManager = [[self alloc] init];
-    });
+    @synchronized(self) {
+        if (_sharedManager == nil) {
+            _sharedManager = [[self alloc] init];
+        }
+    }
     
     return _sharedManager;
 }

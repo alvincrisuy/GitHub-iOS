@@ -10,10 +10,16 @@
 
 #import "GHBaseTableView.h"
 #import "GHSearchTableViewCell.h"
-
 #import "GHRootViewController.h"
+#import "GHSearchManager.h"
 
-@interface GHSearchViewController ()
+#import "ProgressHUD.h"
+
+#import "GHRepositoryModel.h"
+
+@interface GHSearchViewController () {
+    GHSearchManager *apiManager;
+}
 
 @end
 
@@ -22,6 +28,8 @@
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
         // Custom initialization
+        
+        apiManager = [GHSearchManager sharedManager];
     }
     
     return self;
@@ -82,9 +90,6 @@
                 break;
             case GHCellStyleRow1:
                 cell = [GHSearchTableViewCell cellFromNib:GHCellStyleRow1];
-//                [cell.messageButton addTarget:self
-//                                       action:@selector(messageButtonAction:)
-//                             forControlEvents:UIControlEventTouchUpInside];
                 cell.searchTextField.delegate = self;
                 break;
         }
@@ -97,7 +102,30 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     
-    [[GHRootViewController sharedController] transferRepositoryListViewController:self];
+    [self dismissKeyboard];
+    
+    NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:
+                                @"stars", @"sort",
+                                @"desc", @"order",
+                                textField.text, @"q", nil];
+    
+    RequestProgressBlock progressBlock = ^(NSProgress *progress) {
+        
+    };
+    
+    RequestSearchBlock searchBlock = ^(NSArray *list) {
+        
+        [[GHRootViewController sharedController] transferRepositoryListViewController:self repositories:list];
+    };
+    
+    RequestFailedBlock failedBlock = ^(NSURLSessionDataTask *task, NSError *error) {
+        [ProgressHUD dismiss];
+    };
+
+    [apiManager requestWithParams:parameters
+                    progressBlock:progressBlock
+                      searchBlock:searchBlock
+                      failedBlock:failedBlock];
     
     return YES;
 }
