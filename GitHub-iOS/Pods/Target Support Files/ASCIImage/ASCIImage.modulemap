@@ -1,0 +1,6 @@
+framework module ASCIImage {
+  umbrella header "ASCIImage-umbrella.h"
+
+  export *
+  module * { export * }
+}

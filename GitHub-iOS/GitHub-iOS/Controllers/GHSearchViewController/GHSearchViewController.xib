@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GHSearchViewController">
             <connections>
+                <outlet property="tableView" destination="6pM-EC-faf" id="zC1-Do-rDv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,8 +15,28 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6pM-EC-faf" customClass="GHBaseTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="baseTableDataSource" destination="-1" id="Hy5-M7-czn"/>
+                        <outlet property="baseTableDelegate" destination="-1" id="sn9-Ru-RqZ"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6pM-EC-faf" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="1er-hU-I8d"/>
+                <constraint firstItem="6pM-EC-faf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8PF-Fn-ajn"/>
+                <constraint firstItem="6pM-EC-faf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TS2-nF-k1A"/>
+                <constraint firstItem="6pM-EC-faf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="c6J-Bx-nYq"/>
+                <constraint firstAttribute="trailing" secondItem="6pM-EC-faf" secondAttribute="trailing" id="gDL-9U-AJO"/>
+                <constraint firstAttribute="bottom" secondItem="6pM-EC-faf" secondAttribute="bottom" id="qD1-mZ-IUl"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
         </view>
     </objects>
 </document>

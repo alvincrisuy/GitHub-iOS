@@ -21,6 +21,12 @@
 		110D053A1C30223C0003C4E9 /* GHBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D05391C30223C0003C4E9 /* GHBaseTableView.m */; };
 		110D053D1C3022650003C4E9 /* GHBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D053C1C3022650003C4E9 /* GHBaseTableViewController.m */; };
 		110D05411C3025060003C4E9 /* ReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D05401C3025060003C4E9 /* ReachabilityManager.m */; };
+		110D054A1C3099A90003C4E9 /* GHRepositoryListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D05481C3099A80003C4E9 /* GHRepositoryListTableViewCell.m */; };
+		110D054B1C3099A90003C4E9 /* GHRepositoryListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110D05491C3099A90003C4E9 /* GHRepositoryListTableViewCell.xib */; };
+		110D054F1C3099C70003C4E9 /* GHRepositoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D054D1C3099C70003C4E9 /* GHRepositoryTableViewCell.m */; };
+		110D05501C3099C70003C4E9 /* GHRepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110D054E1C3099C70003C4E9 /* GHRepositoryTableViewCell.xib */; };
+		110D05541C3099DA0003C4E9 /* GHSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D05521C3099DA0003C4E9 /* GHSearchTableViewCell.m */; };
+		110D05551C3099DA0003C4E9 /* GHSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110D05531C3099DA0003C4E9 /* GHSearchTableViewCell.xib */; };
 		11AECFF41C2F600500A8DCB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11AECFEE1C2F600500A8DCB5 /* Assets.xcassets */; };
 		11AECFF61C2F600500A8DCB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AECFF11C2F600500A8DCB5 /* main.m */; };
 		11AECFF91C2F60BF00A8DCB5 /* GHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AECFF81C2F60BF00A8DCB5 /* GHAppDelegate.m */; };
@@ -52,6 +58,15 @@
 		110D053C1C3022650003C4E9 /* GHBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHBaseTableViewController.m; sourceTree = "<group>"; };
 		110D053F1C3025060003C4E9 /* ReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachabilityManager.h; sourceTree = "<group>"; };
 		110D05401C3025060003C4E9 /* ReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachabilityManager.m; sourceTree = "<group>"; };
+		110D05471C3099A80003C4E9 /* GHRepositoryListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepositoryListTableViewCell.h; sourceTree = "<group>"; };
+		110D05481C3099A80003C4E9 /* GHRepositoryListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryListTableViewCell.m; sourceTree = "<group>"; };
+		110D05491C3099A90003C4E9 /* GHRepositoryListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHRepositoryListTableViewCell.xib; sourceTree = "<group>"; };
+		110D054C1C3099C60003C4E9 /* GHRepositoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepositoryTableViewCell.h; sourceTree = "<group>"; };
+		110D054D1C3099C70003C4E9 /* GHRepositoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryTableViewCell.m; sourceTree = "<group>"; };
+		110D054E1C3099C70003C4E9 /* GHRepositoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHRepositoryTableViewCell.xib; sourceTree = "<group>"; };
+		110D05511C3099DA0003C4E9 /* GHSearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSearchTableViewCell.h; sourceTree = "<group>"; };
+		110D05521C3099DA0003C4E9 /* GHSearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSearchTableViewCell.m; sourceTree = "<group>"; };
+		110D05531C3099DA0003C4E9 /* GHSearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHSearchTableViewCell.xib; sourceTree = "<group>"; };
 		11AECFCE1C2F5EA600A8DCB5 /* GitHub-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11AECFEE1C2F600500A8DCB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11AECFF01C2F600500A8DCB5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +107,9 @@
 				110D052E1C3002690003C4E9 /* GHRepositoryListViewController.h */,
 				110D052F1C3002690003C4E9 /* GHRepositoryListViewController.m */,
 				110D05301C3002690003C4E9 /* GHRepositoryListViewController.xib */,
+				110D05471C3099A80003C4E9 /* GHRepositoryListTableViewCell.h */,
+				110D05481C3099A80003C4E9 /* GHRepositoryListTableViewCell.m */,
+				110D05491C3099A90003C4E9 /* GHRepositoryListTableViewCell.xib */,
 			);
 			path = GHRepositoryListViewController;
 			sourceTree = "<group>";
@@ -102,6 +120,9 @@
 				110D05291C30024E0003C4E9 /* GHRepositoryViewController.h */,
 				110D052A1C30024E0003C4E9 /* GHRepositoryViewController.m */,
 				110D052B1C30024E0003C4E9 /* GHRepositoryViewController.xib */,
+				110D054C1C3099C60003C4E9 /* GHRepositoryTableViewCell.h */,
+				110D054D1C3099C70003C4E9 /* GHRepositoryTableViewCell.m */,
+				110D054E1C3099C70003C4E9 /* GHRepositoryTableViewCell.xib */,
 			);
 			path = GHRepositoryViewController;
 			sourceTree = "<group>";
@@ -112,6 +133,9 @@
 				110D05241C30023B0003C4E9 /* GHSearchViewController.h */,
 				110D05251C30023B0003C4E9 /* GHSearchViewController.m */,
 				110D05261C30023B0003C4E9 /* GHSearchViewController.xib */,
+				110D05511C3099DA0003C4E9 /* GHSearchTableViewCell.h */,
+				110D05521C3099DA0003C4E9 /* GHSearchTableViewCell.m */,
+				110D05531C3099DA0003C4E9 /* GHSearchTableViewCell.xib */,
 			);
 			path = GHSearchViewController;
 			sourceTree = "<group>";
@@ -286,6 +310,7 @@
 				TargetAttributes = {
 					11AECFCD1C2F5EA600A8DCB5 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = L2SXWB2TAK;
 					};
 				};
 			};
@@ -314,8 +339,11 @@
 			files = (
 				110D05231C3002290003C4E9 /* GHRootViewController.xib in Resources */,
 				110D052D1C30024E0003C4E9 /* GHRepositoryViewController.xib in Resources */,
+				110D05551C3099DA0003C4E9 /* GHSearchTableViewCell.xib in Resources */,
 				110D05191C2FF7970003C4E9 /* ProgressHUD.bundle in Resources */,
+				110D05501C3099C70003C4E9 /* GHRepositoryTableViewCell.xib in Resources */,
 				110D05341C3002D70003C4E9 /* LaunchScreen.xib in Resources */,
+				110D054B1C3099A90003C4E9 /* GHRepositoryListTableViewCell.xib in Resources */,
 				11AECFF41C2F600500A8DCB5 /* Assets.xcassets in Resources */,
 				110D05281C30023B0003C4E9 /* GHSearchViewController.xib in Resources */,
 				110D05321C3002690003C4E9 /* GHRepositoryListViewController.xib in Resources */,
@@ -377,13 +405,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110D054F1C3099C70003C4E9 /* GHRepositoryTableViewCell.m in Sources */,
 				110D05271C30023B0003C4E9 /* GHSearchViewController.m in Sources */,
+				110D05541C3099DA0003C4E9 /* GHSearchTableViewCell.m in Sources */,
 				110D053A1C30223C0003C4E9 /* GHBaseTableView.m in Sources */,
 				110D053D1C3022650003C4E9 /* GHBaseTableViewController.m in Sources */,
 				110D051A1C2FF7970003C4E9 /* ProgressHUD.m in Sources */,
 				110D05311C3002690003C4E9 /* GHRepositoryListViewController.m in Sources */,
 				11AECFF61C2F600500A8DCB5 /* main.m in Sources */,
 				110D05411C3025060003C4E9 /* ReachabilityManager.m in Sources */,
+				110D054A1C3099A90003C4E9 /* GHRepositoryListTableViewCell.m in Sources */,
 				110D052C1C30024E0003C4E9 /* GHRepositoryViewController.m in Sources */,
 				11AECFF91C2F60BF00A8DCB5 /* GHAppDelegate.m in Sources */,
 				110D05221C3002290003C4E9 /* GHRootViewController.m in Sources */,
@@ -486,7 +517,7 @@
 				GCC_PREFIX_HEADER = "GitHub-iOS/Supporting Files/GitHub-iOS-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/GitHub-iOS/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alvincrisuy.GitHub-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pancakeunlimited.PhotoDetection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -502,7 +533,7 @@
 				GCC_PREFIX_HEADER = "GitHub-iOS/Supporting Files/GitHub-iOS-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/GitHub-iOS/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alvincrisuy.GitHub-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pancakeunlimited.PhotoDetection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

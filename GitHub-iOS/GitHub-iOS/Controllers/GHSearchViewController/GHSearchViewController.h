@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GHSearchViewController : UIViewController
+#import "GHBaseTableViewController.h"
+
+@interface GHSearchViewController : GHBaseTableViewController <UITextFieldDelegate>
 
 @end

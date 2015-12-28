@@ -85,7 +85,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-GitHub-iOS/AFNetworking.framework"
+  install_framework "Pods-GitHub-iOS/ASCIImage.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-GitHub-iOS/AFNetworking.framework"
+  install_framework "Pods-GitHub-iOS/ASCIImage.framework"
 fi

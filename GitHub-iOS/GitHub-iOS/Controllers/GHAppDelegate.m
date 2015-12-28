@@ -14,10 +14,12 @@
 + (GHAppDelegate *)sharedDelegate {
     
     static GHAppDelegate *_sharedInstance = nil;
-    static dispatch_once_t oncePredicate;
-    dispatch_once(&oncePredicate, ^{
-        _sharedInstance = [[self alloc] init];
-    });
+    
+    @synchronized(self) {
+        if (_sharedInstance == nil) {
+            _sharedInstance = [[self alloc] init];
+        }
+    }
     
     return _sharedInstance;
 }
