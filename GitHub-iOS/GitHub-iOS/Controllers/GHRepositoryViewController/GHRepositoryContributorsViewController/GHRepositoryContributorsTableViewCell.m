@@ -45,7 +45,7 @@
     [self.pictureImageView setImageWithURL:url];
     
     self.login.text = model.contributorLogin;
-    self.contributionCount.text = [NSString stringWithFormat:@"%d", model.contributorContributionsCount];
+    self.contributionCount.text = [NSString stringWithFormat:@"%ld", (long)model.contributorContributionsCount];
 }
 
 @end

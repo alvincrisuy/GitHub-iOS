@@ -37,7 +37,7 @@
 }
 
 - (void)setCell:(GHIssueModel *)model {
-    self.number.text    = [NSString stringWithFormat:@"%d", model.issueNumber];
+    self.number.text    = [NSString stringWithFormat:@"%ld", (long)model.issueNumber];
     self.title.text     = model.issueTitle;
     self.desc.text      = model.issueBody;
 }

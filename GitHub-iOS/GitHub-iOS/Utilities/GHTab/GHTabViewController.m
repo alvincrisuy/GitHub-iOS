@@ -67,6 +67,7 @@
     
     GHTabView* tabView = [viewArray objectAtIndex:0];//[viewArray objectAtIndex:
                          // self.viewControllerArray.count-1];
+//    tabView.frame = sectionTabView.bounds;
     
     NSMutableArray* titleArray = [NSMutableArray array];
     

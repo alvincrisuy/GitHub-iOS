@@ -476,7 +476,6 @@
 				TargetAttributes = {
 					11AECFCD1C2F5EA600A8DCB5 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = L2SXWB2TAK;
 					};
 				};
 			};
@@ -703,7 +702,7 @@
 				GCC_PREFIX_HEADER = "GitHub-iOS/Supporting Files/GitHub-iOS-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/GitHub-iOS/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pancakeunlimited.PhotoDetection;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alvincrisuy.GitHub-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -719,7 +718,7 @@
 				GCC_PREFIX_HEADER = "GitHub-iOS/Supporting Files/GitHub-iOS-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/GitHub-iOS/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pancakeunlimited.PhotoDetection;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alvincrisuy.GitHub-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
